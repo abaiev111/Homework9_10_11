@@ -5,7 +5,6 @@ import java.util.List;
 
 public interface AppleFactoryRepo {
 
-    public List<AppleFactoryData> getListFactories();
-    //public void deleteAllFactories();
+    List<AppleFactoryData> getListFactories();
 
 }

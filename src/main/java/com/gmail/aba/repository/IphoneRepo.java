@@ -9,16 +9,11 @@ import java.util.List;
 
 public interface IphoneRepo {
 
-    public int create(IphoneData iphone);
-    public IphoneDetailsDTO readById(int id);
-    public int update(IphoneData iphone, int id);
-    public int deleteById(int id);
-    public List<IphoneData> searchNameEndColorByLimit(IphoneSearchDTO iphoneSearch);
-    public List<IphoneIdDTO> getAllId();
-
-
-//    public void deleteAllPhones();
-
-
+    int create(IphoneData iphone);
+    IphoneDetailsDTO readById(int id);
+    int update(IphoneData iphone, int id);
+    int deleteById(int id);
+    List<IphoneData> searchNameEndColorByLimit(IphoneSearchDTO iphoneSearch);
+    List<IphoneIdDTO> getAllId();
 
 }

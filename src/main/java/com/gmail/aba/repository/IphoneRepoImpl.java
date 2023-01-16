@@ -46,16 +46,11 @@ public class IphoneRepoImpl implements IphoneRepo {
                 new BeanPropertyRowMapper<IphoneData>(IphoneData.class), iphoneSearch.getName(), iphoneSearch.getColor(), iphoneSearch.getFrom(), iphoneSearch.getSize());
     }
     
-    //
+
     @Override
     public List<IphoneIdDTO> getAllId(){
         return jdbcTemplate.query("SELECT iphoneId FROM iphone",
                 new BeanPropertyRowMapper<IphoneIdDTO>(IphoneIdDTO.class));
     }
-
-//    @Override
-//    public void deleteAllPhones() {
-//        jdbcTemplate.update("DELETE FROM iphone");
-//    }
 
 }

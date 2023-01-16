@@ -18,11 +18,4 @@ public class AppleFactoryRepoImpl implements AppleFactoryRepo {
     public List<AppleFactoryData> getListFactories() {
         return jdbcTemplate.query("SELECT * FROM appleFactory", new BeanPropertyRowMapper<AppleFactoryData>(AppleFactoryData.class));
     }
-
-//    @Override
-//    public void deleteAllFactories() {
-//        jdbcTemplate.update("DELETE FROM appleFactory");
-//    }
-
-
 }
